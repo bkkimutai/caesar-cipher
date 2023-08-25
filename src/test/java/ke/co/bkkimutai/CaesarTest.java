@@ -35,4 +35,11 @@ public class CaesarTest {
         String decryptedMessage = caesar.decryptMessage();
         assertEquals("Hello World", decryptedMessage);
     }
+    @Test
+    public void testEncryptMessageWithPunctuationAndMixedCase() {
+        Caesar caesar = new Caesar("Hello, zero sum", "encrypt", 3);
+        String encryptedMessage = caesar.encryptMessage();
+        assertEquals("Khoor, chur vxp", encryptedMessage);
+    }
+
 }

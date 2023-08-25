@@ -15,7 +15,8 @@ public class App {
             if (process.toLowerCase().startsWith("e")) {
 
                 System.out.print("Please enter the message: ");
-                String message = scanner.next(); // Read the message as a string
+                scanner.nextLine(); // Consume the newline character left in the buffer
+                String message = scanner.nextLine(); // Read the message as a string
 
                 System.out.print("Please enter the key: ");
                 int key = scanner.nextInt(); // Read the key as an integer
@@ -25,7 +26,8 @@ public class App {
                 System.out.println("Encrypted Message: " + encryptedMessage);
             }else if(process.toLowerCase().startsWith("d")) {
                 System.out.print("Please enter the message: ");
-                String message = scanner.next(); // Read the message as a string
+                scanner.nextLine(); // Consume the newline character left in the buffer
+                String message = scanner.nextLine(); // Read the message as a string
 
                 System.out.print("Please enter the key: ");
                 int key = scanner.nextInt(); // Read the key as an integer
