@@ -1,6 +1,6 @@
 package ke.co.bkkimutai;
 
-public class Caesar {
+ class Caesar {
     private String msg;
     private String process;
     private Integer key;
